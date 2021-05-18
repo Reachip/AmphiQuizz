@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmphiQuizz", "AmphiQuizz\AmphiQuizz.csproj", "{031C9B17-AA05-439F-9734-CD268AF16129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestAmphiQuizz", "UnitTestAmphiQuizz\UnitTestAmphiQuizz.csproj", "{2238DA54-C637-48B3-9348-CD6260DD1DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Debug|x64.ActiveCfg = Debug|x64
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Debug|x64.Build.0 = Debug|x64
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Release|x64.ActiveCfg = Release|x64
+		{031C9B17-AA05-439F-9734-CD268AF16129}.Release|x64.Build.0 = Release|x64
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Debug|x64.Build.0 = Debug|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Release|x64.ActiveCfg = Release|Any CPU
+		{2238DA54-C637-48B3-9348-CD6260DD1DA3}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13078CB3-505B-44BE-93F5-1BCB581E97CD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srv-jupiter.iut-acy.local:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AmphiQuizz\\AmphiQuizz.csproj
+		SccProjectName1 = AmphiQuizz
+		SccLocalPath1 = AmphiQuizz
+		SccProjectUniqueName2 = UnitTestAmphiQuizz\\UnitTestAmphiQuizz.csproj
+		SccProjectName2 = UnitTestAmphiQuizz
+		SccLocalPath2 = UnitTestAmphiQuizz
+	EndGlobalSection
+EndGlobal
