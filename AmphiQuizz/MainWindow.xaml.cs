@@ -210,7 +210,7 @@ namespace AmphiQuizz
         }
 
         /// <summary>
-        /// Méthode invoqué lorsque la  
+        /// Méthode invoqué lorsqu'une note est sélectionné  
         /// </summary>
         private void lvNote_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
