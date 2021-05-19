@@ -134,7 +134,13 @@ namespace AmphiQuizz
                 StudentNameTextBox.Text = student.Name;
                 StudentSurnameTextBox.Text = student.Surname;
                 StudentGroupTextBox.Text = student.Groupe.Libelle;
-                StudentImage.Source = BitmapFrame.Create(new Uri($"U:\\Documents\\DUT\\INFO\\INFO1\\S2\\UE21\\M2104-TROMBI\\{student.ImagePath}"));
+
+                try
+                {
+                    StudentImage.Source = BitmapFrame.Create(new Uri($"U:\\Documents\\DUT\\INFO\\INFO1\\S2\\UE21\\M2104-TROMBI\\{student.ImagePath}"));
+                }
+
+                catch(Exception _) { }
                 lvNote.SelectedIndex = -1;
                 lvNoteProfesseur.SelectedIndex = -1;
                 lvProfesseur.SelectedIndex = -1;
@@ -219,7 +225,7 @@ namespace AmphiQuizz
             if (note != null)
             {
                 lvProfesseur.SelectedItem = note.Teacher;
-                lvNoteProfesseur.SelectedItem = ApplicationData.ListeNotes.Find(x => x.StudentNote == note.StudentNote);
+                lvNoteProfesseur.SelectedItem = ApplicationData.ListeNotes.Find(note_ => note_.StudentNote == note_.StudentNote);
             }
         }
         #endregion Ecouteurs d'événements ------------------------------------------------------
