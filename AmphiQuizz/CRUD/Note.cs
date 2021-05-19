@@ -41,8 +41,8 @@ namespace AmphiQuizz
         /// <summary>
         /// Constructeur de la classe afin de procéder à l'insertion d'une note.
         /// </summary>
-        /// <param name="date"></param>
-        /// <param name="studentNote"></param>
+        /// <param name="date">Date à laquelle la note a été </param>
+        /// <param name="studentNote">Note de l'étudiant</param>
         /// <param name="teacher"></param>
         /// <param name="student"></param>
         public Note(DateTime date, int studentNote, Professeur teacher, Eleve student)
@@ -136,7 +136,13 @@ namespace AmphiQuizz
             {
                 Professeur professeurCRUD = new Professeur();
                 Eleve eleveCRUD = new Eleve();
-                Note note = new Note(reader.GetDateTime(2), reader.GetInt32(3), professeurCRUD.Find($"NUMERO_PROFESSEUR = {reader.GetInt32(0)}"), eleveCRUD.Find($"NUMERO_ELEVE = {reader.GetInt32(1)}"));
+                Note note = new Note(
+                    reader.GetDateTime(2), 
+                    reader.GetInt32(3), 
+                    ApplicationData.ListeProfesseurs.Find(prof => prof.Number == reader.GetInt32(0)), 
+                    ApplicationData.ListeEleves.Find(student => student.Number ==  reader.GetInt32(1))
+                );
+
                 notes.Add(note);
             }
 
