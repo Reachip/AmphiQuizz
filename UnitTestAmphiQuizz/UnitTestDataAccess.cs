@@ -44,7 +44,7 @@ namespace UnitTestAmphiQuizz
             foreach (string table in tables)
             {
                 DataAccess = new DataAccess();
-                SqlDataReader reader = DataAccess.GetData("select * from [IUT-ACY\\ancell].eleve");
+                SqlDataReader reader = DataAccess.GetData($"select * from [IUT-ACY\\ancell].{table}");
                 Assert.IsTrue(reader.Read());
 
 
