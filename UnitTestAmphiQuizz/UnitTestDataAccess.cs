@@ -39,8 +39,18 @@ namespace UnitTestAmphiQuizz
         [TestMethod]
         public void TestGetData()
         {
-            SqlDataReader reader = DataAccess.GetData("select * from [IUT-ACY\\ancell].eleve");
-            Assert.IsTrue(reader.Read());
+            var tables = new string[] { "eleve", "professeur", "groupe", "note" };
+
+            foreach (string table in tables)
+            {
+                DataAccess = new DataAccess();
+                SqlDataReader reader = DataAccess.GetData("select * from [IUT-ACY\\ancell].eleve");
+                Assert.IsTrue(reader.Read());
+
+
+                DataAccess.CloseConnection();
+                reader.Close();
+            }
         }
 
         /// <summary>

@@ -12,3 +12,4 @@ C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csproj.Gene
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csproj.CoreCompileInputs.cache
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.exe
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.pdb
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csprojAssemblyReference.cache
