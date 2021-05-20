@@ -1,0 +1,15 @@
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\bin\x64\Debug\AmphiQuizz.exe.config
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\bin\x64\Debug\AmphiQuizz.exe
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\bin\x64\Debug\AmphiQuizz.pdb
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csprojAssemblyReference.cache
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\MainWindow.g.cs
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\App.g.cs
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz_MarkupCompile.cache
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz_MarkupCompile.lref
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\MainWindow.baml
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.g.resources
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.Properties.Resources.resources
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csproj.GenerateResource.cache
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csproj.CoreCompileInputs.cache
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.exe
+C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.pdb

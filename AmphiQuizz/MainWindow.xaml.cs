@@ -125,6 +125,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Méthode invoqué lorsque la séléction d'un étudiant change
         /// </summary>
+        /// <param name="sender">La liste view interagit</param>
         private void OnStudentSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Eleve student = (Eleve)lvEleve.SelectedItem;
@@ -160,6 +161,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Méthode invoqué lorsque le bouton de tirage aléatoire d'un étudiant est cliqué
         /// </summary>
+        /// <param name="sender">Le bouton cliqué</param>
         private void OnTakeRandomStudentButtonClick(object sender, RoutedEventArgs e)
         {
             int studentListViewSize = lvEleve.Items.Count;
@@ -177,6 +179,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Méthode invoqué lorsque le bouton d'application d'une note à un étudiant séléctionné est cliqué.
         /// </summary>
+        /// <param name="sender">Le bouton cliqué</param>
         private void OnPutNoteButtonClick(object sender, RoutedEventArgs e)
         {
             Eleve student = (Eleve)lvEleve.SelectedItem;
@@ -209,6 +212,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Méthode invoqué lorsqu'un groupe est coché ou décoché.
         /// </summary>
+        /// <param name="sender">L'élément coché</param>
         private void OnGroupeIsCheckedOrUnchecked(object sender, RoutedEventArgs e)
         {
             CollectionViewSource.GetDefaultView(lvEleve.ItemsSource).Refresh();
@@ -218,6 +222,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Méthode invoqué lorsqu'une note est sélectionné  
         /// </summary>
+        /// <param name="sender">La liste view interagit</param>
         private void lvNote_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Note note = (Note)lvNote.SelectedItem;

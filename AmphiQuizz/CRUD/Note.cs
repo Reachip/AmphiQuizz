@@ -43,8 +43,8 @@ namespace AmphiQuizz
         /// </summary>
         /// <param name="date">Date à laquelle la note a été </param>
         /// <param name="studentNote">Note de l'étudiant</param>
-        /// <param name="teacher"></param>
-        /// <param name="student"></param>
+        /// <param name="teacher">Professeur ayant appliqué la note</param>
+        /// <param name="student">Etudiant ayant eu la note</param>
         public Note(DateTime date, int studentNote, Professeur teacher, Eleve student)
         {
             Date = date;
@@ -162,9 +162,9 @@ namespace AmphiQuizz
            
             while (reader.Read())
             {
-                Professeur professeurCRUD = new Professeur();
-                Eleve eleveCRUD = new Eleve();
-                Note note = new Note(reader.GetDateTime(2), reader.GetInt32(3), professeurCRUD.Find($"NUMERO_PROFESSEUR = {reader.GetInt32(3)}"), eleveCRUD.Find($"NUMERO_ELEVE = {reader.GetInt32(0)}"));
+                Professeur teacher = ApplicationData.ListeProfesseurs.Find(teach => teach.Number == reader.GetInt32(3));
+                Eleve student = ApplicationData.ListeEleves.Find(stud => stud.Number == reader.GetInt32(0));
+                Note note = new Note(reader.GetDateTime(2), reader.GetInt32(3), teacher, student);
 
                 notes.Add(note);
             }

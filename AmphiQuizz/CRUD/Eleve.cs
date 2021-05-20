@@ -81,9 +81,7 @@ namespace AmphiQuizz
 
             while (reader.Read())
             {
-                Groupe groupeCRUD = new Groupe();
-                Groupe groupe = groupeCRUD.Find($"N_GROUPE = {reader.GetInt32(1)}");
-
+                Groupe groupe = ApplicationData.ListeGroupes.Find(grp => grp.Number == reader.GetInt32(1));
                 Eleve eleve = new Eleve(reader.GetInt32(0), reader.GetString(2), reader.GetString(3), groupe, reader.GetString(4));
                 studentList.Add(eleve);
             }
@@ -111,9 +109,7 @@ namespace AmphiQuizz
 
             while (reader.Read())
             {
-                Groupe groupeCRUD = new Groupe();
-                Groupe groupe = groupeCRUD.Find($"N_GROUPE = {reader.GetInt32(1)}");
-
+                Groupe groupe = ApplicationData.ListeGroupes.Find(grp => grp.Number == reader.GetInt32(1));
                 Eleve student = new Eleve(reader.GetInt32(0), reader.GetString(2), reader.GetString(3), groupe, reader.GetString(4));
                 secureDataAccess.CloseAll();
                 return student;

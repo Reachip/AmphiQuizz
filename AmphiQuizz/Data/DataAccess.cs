@@ -25,6 +25,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Ouvre une connexion à la BDD.
         /// </summary>
+        /// <returns>Retourne un boolean suivant si la connexion a pu s'effectuer ou non</returns>
         public bool OpenConnection()
         {  
             Connection.Open();
@@ -42,6 +43,8 @@ namespace AmphiQuizz
         /// <summary>
         /// Récupère le résultat d'une requête SQL passée en paramètre.
         /// </summary>
+        /// <param name="queryString">Une requête SQL dont on souhaite avoir le résultat</param>
+        /// <returns>Retourne un objet chargé de lire la requête SQL</returns>
         public SqlDataReader GetData(string queryString)
         {
             SqlCommand command = new SqlCommand(queryString, Connection);
@@ -54,6 +57,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Insère des données une fonctions d'une requête SQL passée en paramètre.
         /// </summary>
+        /// <param name="queryString">Une requête SQL d'insertion</param>
         public void InsertData(string queryString)
         {
             SqlCommand command = new SqlCommand(queryString, Connection);

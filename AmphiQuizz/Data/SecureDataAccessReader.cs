@@ -32,13 +32,16 @@ namespace AmphiQuizz.data
 
         /// <summary>
         /// Récupère une instance de SqlDataReader permettant de lire les
-		/// données du table passé en paramètre avec une expression dans la
-		/// clause where de la requête SQL.
-		///
-		/// Cette méthode tente préalablement une ouverture sécurisé de la connection.
-		/// Si cela n'est pas possible, la méthode retourne une exception de type
-		/// OpenConnectionFailureException.
+        /// données du table passé en paramètre avec une expression dans la
+        /// clause where de la requête SQL.
+        ///
+        /// Cette méthode tente préalablement une ouverture sécurisé de la connection.
+        /// Si cela n'est pas possible, la méthode retourne une exception de type
+        /// OpenConnectionFailureException.
         /// </summary>
+        /// <param name="table">Table dont on souhaite récupérer le lecteur</param>
+        /// <param name="whereClause">Clause where de la requête</param>
+        /// <returns>Retourne un objet chargé de lire la requête SQL</returns>
         public SqlDataReader GetSecureReaderFor(string table, string whereClause=null)
         {
             

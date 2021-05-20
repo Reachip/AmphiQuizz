@@ -31,18 +31,23 @@ namespace AmphiQuizz
         /// <summary>
         /// Permet de récupérer sous forme d'objet, tous les enregistrements de la table de cet objet dans la base de données.
         /// </summary>
+        /// <returns>Une liste d'entitées du CRUD ayant appelé la méthode</returns>
         List<T> FindAll();
 
         /// <summary>
         /// Permet de récupérer sous forme d'objet, les enregistrements de la table de
 		/// cet objet dans la base de données avec une expression de la clause where passé en paramètre.
         /// </summary>
+        /// <param name="criteres">Clause SQL where</param>
+        /// <returns>Une liste d'entitées du CRUD ayant appelé la méthode suivant les critères de séléction</returns>
         List<T> FindBySelection(string criteres);
 
         /// <summary>
         /// Permet de récupérer sous forme d'objet, le premier enregistrement de la table de
 		/// cet objet dans la base de données avec une expression de la clause where passé en paramètre.
         /// </summary>
-        T Find(string criteria);
+        /// <param name="critere">Clause SQL where</param>
+        /// <returns>entitée du CRUD ayant appelé la méthode suivant les critères de séléction</returns>
+        T Find(string critere);
     }
 }
