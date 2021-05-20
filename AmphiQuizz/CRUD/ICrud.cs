@@ -11,6 +11,7 @@ namespace AmphiQuizz
         /// <summary>
         /// Permet de d'insérer dans la base de données, l'objet qui implémente l'interface ICrud.
         /// </summary>
+        /// <exception cref="NullReferenceException">Invoqué si il manque des données à insérer dans la BDD</exception>
         void Create();
 
         /// <summary>
@@ -32,14 +33,16 @@ namespace AmphiQuizz
         /// Permet de récupérer sous forme d'objet, tous les enregistrements de la table de cet objet dans la base de données.
         /// </summary>
         /// <returns>Une liste d'entitées du CRUD ayant appelé la méthode</returns>
+        /// <exception cref="System.Data.SqlClient.SqlException">Invoqué si la requête SQL est incorrecte</exception>
         List<T> FindAll();
 
         /// <summary>
         /// Permet de récupérer sous forme d'objet, les enregistrements de la table de
-		/// cet objet dans la base de données avec une expression de la clause where passé en paramètre.
+        /// cet objet dans la base de données avec une expression de la clause where passé en paramètre.
         /// </summary>
         /// <param name="criteres">Clause SQL where</param>
         /// <returns>Une liste d'entitées du CRUD ayant appelé la méthode suivant les critères de séléction</returns>
+        /// <exception cref="System.Data.SqlClient.SqlException">Invoqué si la requête SQL est incorrecte</exception>
         List<T> FindBySelection(string criteres);
 
         /// <summary>
@@ -48,6 +51,7 @@ namespace AmphiQuizz
         /// </summary>
         /// <param name="critere">Clause SQL where</param>
         /// <returns>entitée du CRUD ayant appelé la méthode suivant les critères de séléction</returns>
+        /// <exception cref="System.Data.SqlClient.SqlException">Invoqué si la requête SQL est incorrecte</exception>
         T Find(string critere);
     }
 }

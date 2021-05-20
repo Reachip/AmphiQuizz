@@ -41,7 +41,9 @@ namespace AmphiQuizz.data
         /// </summary>
         /// <param name="table">Table dont on souhaite récupérer le lecteur</param>
         /// <param name="whereClause">Clause where de la requête</param>
-        /// <returns>Retourne un objet chargé de lire la requête SQL</returns>
+        /// <returns>Retourne un objet chargé de lire la requête SQL ou null si la requête est incorrecte</returns>
+        /// <exception cref="OpenConnectionFailureException">Invoqué si la connexion n'a pas pu s'ouvrir</exception>
+        /// <exception cref="InvalidOperationException">Invoqué si la requête SQL est incorrecte</exception>
         public SqlDataReader GetSecureReaderFor(string table, string whereClause=null)
         {
             

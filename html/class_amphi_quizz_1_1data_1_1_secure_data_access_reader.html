@@ -183,7 +183,14 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Retourne un objet chargé de lire la requête SQL</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Retourne un objet chargé de lire la requête SQL ou null si la requête est incorrecte</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_amphi_quizz_1_1data_1_1_open_connection_failure_exception.html" title="Exception personnalisé permettant d&#39;indiquer qu&#39;on ne peut pas continuer, étant donné que la connexio...">OpenConnectionFailureException</a></td><td>Invoqué si la connexion n'a pas pu s'ouvrir</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Invoqué si la requête SQL est incorrecte</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
