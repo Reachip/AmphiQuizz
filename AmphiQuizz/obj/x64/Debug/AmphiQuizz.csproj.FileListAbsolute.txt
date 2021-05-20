@@ -1,7 +1,6 @@
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\bin\x64\Debug\AmphiQuizz.exe.config
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\bin\x64\Debug\AmphiQuizz.exe
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\bin\x64\Debug\AmphiQuizz.pdb
-C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz.csprojAssemblyReference.cache
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\MainWindow.g.cs
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\App.g.cs
 C:\Users\test\Desktop\AmphiQuizz\AmphiQuizz\obj\x64\Debug\AmphiQuizz_MarkupCompile.cache

@@ -50,7 +50,7 @@ namespace UnitTestAmphiQuizz
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
-        public void TestMethodGetSecureReaderForNotClosed()
+        public void TestMethodGetSecureReaderForInvalidOperationException()
         {
             SecureDataAccess.GetSecureReaderFor("note", "champ_inconnu=-404");
             SecureDataAccess.GetSecureReaderFor("professeur", "NUMERO_PROFESSEUR=1");

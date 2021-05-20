@@ -23,6 +23,7 @@ namespace UnitTestAmphiQuizz
         [TestInitialize]
         public void TestInitialize()
         {
+            ApplicationData.LoadApplicationData();
             eleve = new Eleve();
             professeur = new Professeur();
             note = new Note();

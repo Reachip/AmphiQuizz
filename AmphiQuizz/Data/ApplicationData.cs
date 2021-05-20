@@ -49,9 +49,9 @@ namespace AmphiQuizz
             Groupe groupe = new Groupe();
             Note note = new Note();
 
+            ListeGroupes = groupe.FindAll();
             ListeEleves = eleve.FindAll();
             ListeProfesseurs = professeur.FindAll();
-            ListeGroupes = groupe.FindAll();
             ListeNotesEleves = note.FindAll();
             ListeNotes = new List<Note> {
                 new Note(SignificationNote.ABSENT),
